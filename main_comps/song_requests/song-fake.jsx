@@ -37,9 +37,9 @@ export default function FakeBar(props){
       <motion.text
         x={76}
         y={39}
-        fontSize={24}
+        fontSize={18}
         fill='black'       
-      >
+      >{props.text}
       </motion.text>
     </motion.svg>
     </motion.div>

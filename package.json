@@ -1,0 +1,31 @@
+{
+  "name": "snipcarttest",
+  "version": "1.0.0",
+  "description": "Every new repl comes with a `.replit` and a `replit.nix` file that let you configure your repl to do just about anything in any language!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@next/font": "^13.1.1",
+    "daisyui": "^2.46.0",
+    "flubber": "^0.4.2",
+    "framer-motion": "^8.1.5",
+    "next": "^13.1.1",
+    "react": "^18.2.0",
+    "react-icons": "^4.7.1",
+    "use-snipcart": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.11.18",
+    "@types/react": "18.0.26",
+    "tailwindcss": "^3.2.4",
+    "typescript": "4.9.4"
+  }
+}

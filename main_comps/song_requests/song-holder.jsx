@@ -169,6 +169,19 @@ export default function SongBox(){
             <FakeCard genre={fakeFile[mod((CenterId - 1), fakeFile.length)].genre} songs={fakeFile[mod((CenterId - 1), fakeFile.length)].songs}/>
             </motion.div>
           <motion.div
+            drag="x"
+
+            onDragEnd={
+              (event, info) => {
+               console.log(`${window.innerWidth/2}, ${info.point.x}`)
+               if(window.innerWidth/2 - info.point.x < 0){
+                 prevBtn()
+               }else{
+                 nextBtn()
+               }
+              }
+            }
+            
             variants={variants}
             key={CenterId}
             initial={FlowDirection ? 'right' : 'left'}

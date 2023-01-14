@@ -19,10 +19,11 @@ export default function Header(props){
         <ul className="menu menu-horizontal px-1">
           <li><div className="execute-hover"><a className="snipcart-checkout cool-hover"><span><FaShoppingCart className="inline pr-1"/>${cart.subtotal?.toFixed(2)}</span><span className="btnBefore"></span></a></div></li>
           {props.items.map((item)=>{
-
+//todo: get item.src and href to work
             return (
               <li>
-                <div className="execute-hover"><a className="cool-hover px-0"><span className="px-0">{item.name}</span><span className="btnBefore"></span></a></div>
+                <div className="execute-hover"><a
+                href={item.src} className="cool-hover px-0"><span className="px-0">{item.name}</span><span className="btnBefore"></span></a></div>
               </li>
             )
           })}

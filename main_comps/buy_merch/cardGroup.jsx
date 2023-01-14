@@ -1,6 +1,7 @@
 import Card from './card.jsx'
 export default function CardGroup(props){
   return (
+<div><h1 href="shop">Shop.</h1>
     <div className='card-holder mx-auto justify-center w-10/12'>
     {
       (props.products != null) ?
@@ -13,6 +14,7 @@ export default function CardGroup(props){
       
     <script async src="https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.js" />
     <div hidden id="snipcart" data-config-modal-style="side" data-api-key="ZjE0ZDk2ZDItOTk4NC00Y2RjLWFiOWQtYTVmMmRkMTU5MzY3NjM4MDgyMDE5NzQxNTY1MTUx" />  
+    </div>
     </div>
   )
 }

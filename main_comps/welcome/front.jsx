@@ -36,14 +36,14 @@ const Youtube = () => {
         fill="currentColor"
         viewBox = "0 0 163.279 114.301"
         aria-hidden = "true">
-            <path d=" M 159.865 17.85 C 157.983 10.82 152.459 5.296 145.429 3.414 C 132.701 0 81.639 0 81.639 0 C 81.639 0 30.578 0 17.849 3.414 C 10.82 5.296 5.295 10.82 3.414 17.85 C 0 30.578 0 57.151 0 57.151 C 0 57.151 0 83.723 3.414 96.452 C 5.295 103.481 10.82 109.005 17.849 110.887 C 30.578 114.301 81.639 114.301 81.639 114.301 C 81.639 114.301 132.701 114.301 145.429 110.887 C 152.459 109.005 157.983 103.481 159.865 96.452 C 163.279 83.723 163.279 57.151 163.279 57.151 C 163.279 57.151 163.265 30.578 159.865 17.85 Z"/><path d=" M 65.296 81.642 L 107.715 57.153 L 65.296 32.664 L 65.296 81.642 Z " fill="rgb(255,255,255)"/>
+            <path d=" M 159.865 17.85 C 157.983 10.82 152.459 5.296 145.429 3.414 C 132.701 0 81.639 0 81.639 0 C 81.639 0 30.578 0 17.849 3.414 C 10.82 5.296 5.295 10.82 3.414 17.85 C 0 30.578 0 57.151 0 57.151 C 0 57.151 0 83.723 3.414 96.452 C 5.295 103.481 10.82 109.005 17.849 110.887 C 30.578 114.301 81.639 114.301 81.639 114.301 C 81.639 114.301 132.701 114.301 145.429 110.887 C 152.459 109.005 157.983 103.481 159.865 96.452 C 163.279 83.723 163.279 57.151 163.279 57.151 C 163.279 57.151 163.265 30.578 159.865 17.85 Z"/><path d=" M 65.296 81.642 L 107.715 57.153 L 65.296 32.664 L 65.296 81.642 Z " fill="rgb(255,255,255)"/> {/* todo: make the karat in the youtube sign be the same color as the bg*/}
         </svg>
     )
 }
 
 const Spotify = () => {
     return(
-    <svg className="h-8 w-8 my-auto"
+    <svg className="h-8 w-8 mt-1"
     fill="currentColor"
     viewBox="0.253 0.277 167.487 167.483"
     aria-hidden="true">
@@ -55,14 +55,19 @@ const Spotify = () => {
 
 export default function Front(){
     return (
-        <div className="card-holder mx-auto w-10/12 max-w-2xl h-screen my-auto align-middle">
+        <div className="flex h-screen bg-slate-500 place-content-center justify-center items-center">
+        <div className="card-holder mx-auto w-10/12 max-w-2xl my-auto align-middle">
             <img src={avatar.src} className="rounded-full drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)]" />
             <div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <div className="flex justify-between w-52">
-                <Twitter /><Soundcloud /><Youtube /><Spotify />
+                <a href="https://twitter.com/realpandaeyes" target="_blank"><Twitter /></a>
+                <a href="https://soundcloud.com/officialpandaeyes" target="_blank"><Soundcloud /></a>
+                <a href="https://www.youtube.com/@OfficialPandaEyes" target="_blank"><Youtube /></a>
+                <a href="https://open.spotify.com/artist/3K0GDmmiRwn1Zc7RZzTeAz" target="_blank"><Spotify /></a>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

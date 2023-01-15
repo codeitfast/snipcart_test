@@ -26,7 +26,7 @@ span{
   -webkit-transition: 0.5s ease;
 }
 
-.btnBefore, .btnBig {
+.btnBefore, .btnBig, .btnMed, .btnShop, .btnSongs {
     content: '';
     position: absolute;
     height: 0;
@@ -43,13 +43,21 @@ span{
     -moz-box-sizing: border-box;
     border-color: #FF6600;
 }
-.cool-hover .btnBefore, .cool-hover .btnBig {
+.cool-hover .btnBefore, .cool-hover .btnBig, .cool-hover .btnMed, .cool-hover .btnSongs, .cool-hover .btnShop {
     right: 0;
     bottom: 0px;
 }
 
-.execute-hover:hover .btnBefore {
-  border-width: 0 0 2px 50px;
+.execute-hover:hover .btnSongs{
+  border-width: 0 0 2px 40px;
+}
+
+.execute-hover:hover .btnShop{
+  border-width: 0 0 2px 35px;
+}
+
+.execute-hover:hover .btnMed {
+  border-width: 0 0 2px 62.9px;
 }
 
 .execute-hover:hover .btnBig{
@@ -84,4 +92,27 @@ circle:hover, line:hover, rect:hover, path:hover{
   grid-template-columns: repeat(auto-fit, minmax(256px,1fr));
   align-content: start;
   gap: 1rem;
+}
+
+body{
+  overflow: overlay;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
 }

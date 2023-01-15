@@ -12,16 +12,16 @@ import Header from '../main_comps/header/header.jsx'
 import CardGroup from '../main_comps/buy_merch/cardGroup.jsx'
 import SongBox from '../main_comps/song_requests/song-holder.jsx'
 import Front from '../main_comps/welcome/front.jsx'
+import Footer from '../main_comps/footer/footer.jsx'
 
 export default function Home() {
   return (
     <>
       <Header items={[{name:'songs',href:'#songs'},{name:'shop',href:'#shop'}]}/>
       <Front />
-
       <SongBox genre="Pop." songs={[{'text':'SONG HERE'},{'text':'SONG HERE'},{'text':'SONG HERE'}]}/>
-      
       <CardGroup products={products} />
+      <Footer />
     </>
   )
 }

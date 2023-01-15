@@ -55,7 +55,7 @@ const Spotify = () => {
 
 export default function Front(){
     return (
-        <div className="flex h-screen bg-slate-500 place-content-center justify-center items-center text-white">
+        <div className="flex h-screen bg-slate-500 place-content-center justify-center items-center text-white" id="about">
         <div className="card-holder mx-auto w-10/12 max-w-2xl my-auto align-middle">
             <img src={avatar.src} className="rounded-full drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)]" />
             <div>

@@ -153,10 +153,10 @@ export default function SongBox(){
   }
   
   return (
-    <div className="flex h-screen bg-slate-700 place-content-center justify-center items-center text-white">
-    <div className="my-auto align-middle w-10/12">
+    <div className="flex h-screen bg-slate-700 place-content-center justify-center items-center text-white" id="songs">
+    <div className="my-auto align-middle w-screen">
      <motion.div className="carousel-wrapper grid place-items-center overflow-hidden align-middle">
-      <h1 className="text-4xl text-white">Some Songs You Might Like:</h1>
+      <h1 className="text-4xl text-white text-center">Some Songs You Might Like:</h1>
       <motion.div className="carousel-content relative h-96 align-middle">
         <AnimatePresence initial={false}>
           <motion.div

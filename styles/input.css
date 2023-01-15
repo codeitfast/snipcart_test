@@ -22,11 +22,11 @@ body{
 
 span{
   position: relative;
-  transition: 0.3s ease;
-  -webkit-transition: 0.3s ease;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
 }
 
-.btnBefore {
+.btnBefore, .btnBig {
     content: '';
     position: absolute;
     height: 0;
@@ -43,16 +43,21 @@ span{
     -moz-box-sizing: border-box;
     border-color: #FF6600;
 }
-.cool-hover .btnBefore {
+.cool-hover .btnBefore, .cool-hover .btnBig {
     right: 0;
     bottom: 0px;
 }
 
 .execute-hover:hover .btnBefore {
-  border-width: 0 0 1px 75px;
+  border-width: 0 0 2px 50px;
 }
 
-.execute-hover:hover .btnAfter {
+.execute-hover:hover .btnBig{
+  border-width: 0 0 2px 180px;
+}
+
+/*
+.execute-hover:hover .btnAfter, .execute-hover:hover .btnBig {
 height: 100%;
 width: 100%;
 transition: width 1s ease, height 1s ease 1s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
@@ -60,7 +65,7 @@ transition: width 1s ease, height 1s ease 1s, border-top-right-radius 0.1s ease 
 -moz-transition: width 1s ease, height 1s ease 1s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
 -o-transition: width 1s ease, height 1s ease 1s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
 -ms-transition: width 1s ease, height 1s ease 1s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
-}
+}*/
 
 circle,
 line,

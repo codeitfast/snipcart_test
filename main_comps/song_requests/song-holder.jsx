@@ -13,7 +13,7 @@ function mod(n, m) {
 function CardBody(args){
   return (
     <motion.div className="card-body">
-      <h1 className="card-title text-center mx-auto text-4xl">{args.genre}</h1>
+      <h1 className="card-title text-center mx-auto text-4xl text-black">{args.genre}</h1>
       {args.songs.map((song) => {
         //make playable and unplayable version of animationBar  
         return <AnimationBar text={song} className="justify-center"/> //add url arg too
@@ -25,7 +25,7 @@ function CardBody(args){
 function FakeCard(args){
   return (
     <motion.div className="card-body">
-      <h1 className="card-title text-center mx-auto text-4xl">{args.genre}</h1>
+      <h1 className="card-title text-center mx-auto text-4xl text-black">{args.genre}</h1>
       {args.songs.map((song) => {
         //make playable and unplayable version of animationBar  
         return <FakeBar text={song} className="justify-center"/> //add url arg too
@@ -153,9 +153,10 @@ export default function SongBox(){
   }
   
   return (
-    <div className="h-screen place-content-center">
-    <div className="my-auto">
+    <div className="flex h-screen bg-slate-700 place-content-center justify-center items-center text-white">
+    <div className="my-auto align-middle w-10/12">
      <motion.div className="carousel-wrapper grid place-items-center overflow-hidden align-middle">
+      <h1 className="text-4xl text-white">Some Songs You Might Like:</h1>
       <motion.div className="carousel-content relative h-96 align-middle">
         <AnimatePresence initial={false}>
           <motion.div

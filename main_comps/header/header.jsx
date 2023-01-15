@@ -1,5 +1,6 @@
 import pandaLogo1 from './panda_eyes_text_transparent.png'
 import pandaLogo2 from './panda_eyes_black.png'
+import pandaLogo3 from './new_panda.png'
 import {FaShoppingCart} from 'react-icons/fa'
 import {useSnipcart} from 'use-snipcart'
 
@@ -13,7 +14,7 @@ export default function Header(props){
   return(
     <div className="navbar bg-base-100/50 backdrop-blur-sm  top-0 z-10 fixed">
       <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-xl"><img src={pandaLogo2.src} className="h-full"/></a>
+        <a className="btn btn-ghost normal-case text-xl"><img src={pandaLogo3.src} className="h-full"/></a>
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">

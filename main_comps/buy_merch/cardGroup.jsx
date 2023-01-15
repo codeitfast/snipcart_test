@@ -1,7 +1,18 @@
 import Card from './card.jsx'
+import panda from '../../public/images/panda_3d.png'
+
 export default function CardGroup(props){
   return (
-<div><h1 href="shop">Shop.</h1>
+<div className="bg-slate-900">
+  <div className="text-center place-content-center pt-16 pb-8">
+    <h1 id="shop" className="text-4xl text-white">Merch</h1>
+    <div className="text-white flex mx-auto w-fit">5% of profits go to the
+    
+    <div className="execute-hover ml-1 cursor-pointer w-fit h-fit pb-none">
+      <a className="cool-hover font-bold" href="https://www.worldwildlife.org/about/"><span>World Wildlife Fund <img src={panda.src} className="h-6 mb-2 w-auto inline-block"/></span><span className="btnBig -translate-y-1"></span></a>
+    </div>
+  </div>
+  </div>
     <div className='card-holder mx-auto justify-center w-10/12'>
     {
       (props.products != null) ?

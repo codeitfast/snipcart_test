@@ -2742,12 +2742,24 @@ html {
   margin-bottom: 1.5rem;
 }
 
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
 
 .mt-1 {
   margin-top: 0.25rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
 }
 
 .inline-block {
@@ -2770,6 +2782,15 @@ html {
   display: none;
 }
 
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
 .h-full {
   height: 100%;
 }
@@ -2790,13 +2811,17 @@ html {
   height: 2rem;
 }
 
-.w-10\/12 {
-  width: 83.333333%;
-}
-
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.w-10\/12 {
+  width: 83.333333%;
 }
 
 .w-10 {
@@ -2827,8 +2852,17 @@ html {
   flex-grow: 1;
 }
 
+.-translate-y-1 {
+  --tw-translate-y: -0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .place-content-center {
@@ -2868,12 +2902,22 @@ html {
   background-color: hsl(var(--b1) / var(--tw-bg-opacity));
 }
 
+.bg-slate-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+
 .bg-red-500\/25 {
   background-color: rgb(239 68 68 / 0.25);
 }
 
 .bg-base-100\/50 {
   background-color: hsl(var(--b1) / 0.5);
+}
+
+.bg-slate-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 }
 
 .bg-slate-500 {
@@ -2895,6 +2939,14 @@ html {
   padding-right: 0px;
 }
 
+.pt-16 {
+  padding-top: 4rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
 .pr-1 {
   padding-right: 0.25rem;
 }
@@ -2907,14 +2959,14 @@ html {
   vertical-align: middle;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-5xl {
@@ -2922,13 +2974,27 @@ html {
   line-height: 1;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .normal-case {
   text-transform: none;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-primary-content {
   --tw-text-opacity: 1;
   color: hsl(var(--pc) / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .shadow-xl {
@@ -2981,11 +3047,11 @@ body{
 
 span{
   position: relative;
-  transition: 0.3s ease;
-  -webkit-transition: 0.3s ease;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
 }
 
-.btnBefore {
+.btnBefore, .btnBig {
   content: '';
   position: absolute;
   height: 0;
@@ -3003,24 +3069,29 @@ span{
   border-color: #FF6600;
 }
 
-.cool-hover .btnBefore {
+.cool-hover .btnBefore, .cool-hover .btnBig {
   right: 0;
   bottom: 0px;
 }
 
 .execute-hover:hover .btnBefore {
-  border-width: 0 0 1px 75px;
+  border-width: 0 0 2px 50px;
 }
 
-.execute-hover:hover .btnAfter {
-  height: 100%;
-  width: 100%;
-  transition: width 1s ease, height 1s ease 1s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
-  -webkit-transition: width 1s ease, height 1s ease 1s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
-  -moz-transition: width 1s ease, height 1s ease 1s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
-  -o-transition: width 1s ease, height 1s ease 1s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
-  -ms-transition: width 1s ease, height 1s ease 1s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+.execute-hover:hover .btnBig{
+  border-width: 0 0 2px 180px;
 }
+
+/*
+.execute-hover:hover .btnAfter, .execute-hover:hover .btnBig {
+height: 100%;
+width: 100%;
+transition: width 1s ease, height 1s ease 1s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+-webkit-transition: width 1s ease, height 1s ease 1s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+-moz-transition: width 1s ease, height 1s ease 1s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+-o-transition: width 1s ease, height 1s ease 1s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+-ms-transition: width 1s ease, height 1s ease 1s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+}*/
 
 circle,
 line,

@@ -6,7 +6,7 @@ export default function Card(props){
     }
   }catch(err){}
   return(
-    <div className="card card-compact inline-block bg-base-100 shadow-xl mb-6 grow sm:max-w-11/12">
+    <div className="card card-compact inline-block bg-base-100 shadow-xl mb-1 grow sm:max-w-11/12">
       <figure><img src={props.image.src} alt={props.image.alt} /></figure>
       <div className="card-body">
         <h2 className="card-title">{props.name}</h2>

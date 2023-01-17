@@ -9,7 +9,7 @@ export default function CardGroup(props){
     <div className="text-white flex mx-auto w-fit">5% of profits go to the
     
     <div className="execute-hover ml-1 cursor-pointer w-fit h-fit pb-none">
-      <a className="cool-hover font-bold" href="https://www.worldwildlife.org/about/"><span>World Wildlife Fund <img src={panda.src} className="h-6 mb-2 w-auto inline-block"/></span><span className="btnBig -translate-y-1"></span></a>
+      <a className="cool-hover font-bold" href="https://www.worldwildlife.org/about/" target="_blank"><span>World Wildlife Fund <img src={panda.src} className="h-6 mb-2 w-auto inline-block"/></span><span className="btnBig -translate-y-1"></span></a>
     </div>
   </div>
   </div>

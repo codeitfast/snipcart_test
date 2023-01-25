@@ -203,8 +203,8 @@ export default function SongBox(){
       </motion.div>
     </motion.div>
       <motion.div className="flex mx-auto justify-center">
-        <motion.button className="btn btn-ghost p-0" onClick={prevBtn}><CgArrowLeftR className="text-5xl"/></motion.button>
-        <motion.button className="btn btn-ghost p-0" onClick={nextBtn}><CgArrowRightR className="text-5xl"/></motion.button>
+        <motion.button className="btn btn-ghost p-0" onClick={nextBtn}><CgArrowLeftR className="text-5xl"/></motion.button>
+        <motion.button className="btn btn-ghost p-0" onClick={prevBtn}><CgArrowRightR className="text-5xl"/></motion.button>
       </motion.div>
     </div>
     </div>

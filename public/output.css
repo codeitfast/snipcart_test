@@ -2827,12 +2827,12 @@ html {
   height: 2.5rem;
 }
 
-.h-0 {
-  height: 0px;
-}
-
 .h-16 {
   height: 4rem;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .w-fit {
@@ -2860,8 +2860,20 @@ html {
   width: 13rem;
 }
 
+.w-11\/12 {
+  width: 91.666667%;
+}
+
 .max-w-2xl {
   max-width: 42rem;
+}
+
+.max-w-sm {
+  max-width: 24rem;
+}
+
+.max-w-lg {
+  max-width: 32rem;
 }
 
 .flex-1 {
@@ -2929,6 +2941,15 @@ html {
   border-radius: 9999px;
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.rounded-t-2xl {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
 .bg-base-100 {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--b1) / var(--tw-bg-opacity));
@@ -2960,11 +2981,6 @@ html {
 .bg-slate-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
-}
-
-.bg-red-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
 .fill-current {
@@ -3164,7 +3180,7 @@ circle:hover, line:hover, rect:hover, path:hover{
 .card-holder{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(256px,1fr));
-  align-content: start;
+  align-content: center;
   gap: 1rem;
 }
 
@@ -3201,10 +3217,6 @@ body{
 }
 
 @media (min-width: 640px) {
-  .sm\:h-16 {
-    height: 4rem;
-  }
-
   .sm\:h-0 {
     height: 0px;
   }

@@ -3,9 +3,17 @@ import FakeBar from './song-fake.jsx'
 import {motion, AnimatePresence} from 'framer-motion'
 import {useState, useEffect} from 'react'
 import {CgArrowLeftR,CgArrowRightR} from "react-icons/cg"
-
+import UseStateHolder from './useStateHolder.jsx'
+import {FaArrowAltCircleLeft, FaArrowAltCircleRight, FaDotCircle} from 'react-icons/fa'
+import {BsDot} from 'react-icons/bs'
 //special mod function
 //https://stackoverflow.com/questions/4467539/javascript-modulo-gives-a-negative-result-for-negative-numbers
+
+//
+//
+//TODO: MAKE A FASTER CAROUSEL
+//
+//
 function mod(n, m) {
   return ((n % m) + m) % m;
 }
@@ -14,11 +22,15 @@ function CardBody(args){
   return (
     <motion.div className="card-body">
       <h1 className="card-title text-center mx-auto text-4xl text-black">{args.genre}</h1>
-      {args.songs.map((song) => {
-        //make playable and unplayable version of animationBar  
-        return <AnimationBar text={song} className="justify-center"/> //add url arg too
-      })}
+      <UseStateHolder args={args} className="justify-center"/>
+
     </motion.div>
+  )
+}
+
+function VideoCardBody(args){
+  return(
+    <iframe src={args.src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen;" className="overflow-hidden rounded-2xl" width="500" height="280" allowfullscreen></iframe>
   )
 }
 
@@ -158,6 +170,7 @@ export default function SongBox(){
      <motion.div className="carousel-wrapper grid place-items-center overflow-hidden align-middle">
       <h1 className="text-4xl text-white text-center">Some Songs You Might Like:</h1>
       <motion.div className="carousel-content relative h-96 align-middle">
+        
         <AnimatePresence initial={false}>
           <motion.div
             key={LeftId}
@@ -188,7 +201,7 @@ export default function SongBox(){
             initial={FlowDirection ? 'right' : 'left'}
             animate="center"
             className="card card-compact w-fit bg-base-100 shadow-xl my-auto absolute"
-          ><CardBody genre={fakeFile[CenterId].genre} songs={fakeFile[CenterId].songs}/></motion.div>
+          ><VideoCardBody src="https://www.youtube.com/embed/Y3MqM7nIwbs"/></motion.div>
           <motion.div
             key={RightId}
             variants={variants}
@@ -203,8 +216,12 @@ export default function SongBox(){
       </motion.div>
     </motion.div>
       <motion.div className="flex mx-auto justify-center">
-        <motion.button className="btn btn-ghost p-0" onClick={nextBtn}><CgArrowLeftR className="text-5xl"/></motion.button>
-        <motion.button className="btn btn-ghost p-0" onClick={prevBtn}><CgArrowRightR className="text-5xl"/></motion.button>
+        {fakeFile.map((file)=>{
+          return(<BsDot />)
+        })}
+
+        <motion.button className="btn btn-ghost p-0" onClick={nextBtn}><FaArrowAltCircleLeft className="text-5xl"/></motion.button>
+        <motion.button className="btn btn-ghost p-0" onClick={prevBtn}><FaArrowAltCircleRight className="text-5xl"/></motion.button>
       </motion.div>
     </div>
     </div>

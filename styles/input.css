@@ -80,7 +80,7 @@ circle:hover, line:hover, rect:hover, path:hover{
 .card-holder{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(256px,1fr));
-  align-content: start;
+  align-content: center;
   gap: 1rem;
 }
 

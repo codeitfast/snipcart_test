@@ -135,7 +135,8 @@ export default function SongBox(){
       y:'4rem',
       x: 'calc(-12rem - 50%)',
       opacity: 1,
-      scale: 1,
+      scale: 1.1,
+      opacity: .4,
       zIndex: '4',
       filter: 'blur(2px)',
       boxShadow: '0px 0px 30px 0px rgba(0,0,0,0.1)',
@@ -149,7 +150,8 @@ export default function SongBox(){
       x: 'calc(12rem - 50%)', //50% is the width of the card, since they have the absolute trait they need this as well
       opacity: 1,
       filter: 'blur(2px)',
-      scale: 1,
+      scale: 1.1,
+      opacity: .4,
       boxShadow: '0px 0px 30px 0px rgba(0,0,0,0.1)',
       zIndex: '3',
       transition: {
@@ -190,7 +192,11 @@ export default function SongBox(){
             exit={'leftHidden'}
             className="card card-compact w-fit bg-base-100 shadow-xl my-auto absolute"
           >
-            <VideoCardBody src={videos[LeftId]} />
+            <motion.div className="relative">
+            <VideoCardBody src={videos[LeftId] + '?enablejsapi=0&autoplay=0&mute=1&controls=0'} />
+            <motion.div className="absolute top-0 left-0 w-full h-full pointer-events-none z-50 disabled"></motion.div>
+            </motion.div>
+            
             </motion.div>
           <motion.div
             drag="x"
@@ -220,7 +226,7 @@ export default function SongBox(){
             exit={'rightHidden'}
             className="card card-compact w-fit bg-base-100 shadow-xl my-auto absolute"
           >
-            <VideoCardBody src={videos[RightId]} />
+            <VideoCardBody src={videos[RightId] + '?enablejsapi=0&autoplay=0&mute=1&controls=0'} />
           </motion.div>
         </AnimatePresence>
       </motion.div>

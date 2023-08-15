@@ -18,7 +18,7 @@ export default function CardGroup(props){
       (props.products != null) ?
       props.products.map(product => {
       return (
-        <Card image={{src:product.image,alt:`Preview of ${product.title}`}} name={product.title} description={product.description} price={product.price} id={product.id} src={product.image}/>
+        <Card image={{src:product.image,alt:`Preview of ${product.title}`, back:product.back}} name={product.title} description={product.description} price={product.price} id={product.id} src={product.image}/>
       )})
       : <p>ERR</p>
     }

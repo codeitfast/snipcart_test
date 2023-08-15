@@ -4,62 +4,71 @@
     "id": "Panda_eyes_hoodie_1",
     "description": "Comfortable Hoodie, comes in sm, md, lg, xl.",
     "price": "$15.00",
-    "image": "/images/sample_product_res.jpg"
+    "image": "/images/sample_product_res.jpg",
+    "back": "/images/sample_back.png"
   },
   {
     "title": "Panda Eyes Hoodie 2",
     "id": "Panda_eyes_hoodie_2",
     "description": "Comfortable Hoodie, comes in sm, md, lg, xl.",
     "price": "$15.00",
-    "image": "/images/sample_product_res.jpg"
+    "image": "/images/sample_product_res.jpg",
+    "back": "/images/sample_back.png"
   },
   {
     "title": "Panda Eyes Hoodie 3",
     "id": "Panda_eyes_hoodie_3",
     "description": "Comfortable Hoodie, comes in sm, md, lg, xl.",
     "price": "$15.00",
-    "image": "/images/sample_product_res.jpg"
+    "image": "/images/sample_product_res.jpg",
+    "back": "/images/sample_back.png"
   },
   {
     "title": "Panda Eyes Hoodie 4",
     "id": "Panda_eyes_hoodie_4",
     "description": "Comfortable Hoodie, comes in sm, md, lg, xl.",
     "price": "$15.00",
-    "image": "/images/sample_product_res.jpg"
+    "image": "/images/sample_product_res.jpg",
+    "back": "/images/sample_back.png"
   },
   {
     "title": "Panda Eyes Hoodie 5",
     "id": "Panda_eyes_hoodie_5",
     "description": "Comfortable Hoodie, comes in sm, md, lg, xl.",
     "price": "$15.00",
-    "image": "/images/sample_product_res.jpg"
+    "image": "/images/sample_product_res.jpg",
+    "back": "/images/sample_back.png"
   },
   {
     "title": "Panda Eyes Hoodie 6",
     "id": "Panda_eyes_hoodie_6",
     "description": "Comfortable Hoodie, comes in sm, md, lg, xl.",
     "price": "$15.00",
-    "image": "/images/sample_product_res.jpg"
+    "image": "/images/sample_product_res.jpg",
+    "back": "/images/sample_back.png"
   },
   {
     "title": "Panda Eyes Hoodie 7",
     "id": "Panda_eyes_hoodie_7",
     "description": "Comfortable Hoodie, comes in sm, md, lg, xl.",
     "price": "$15.00",
-    "image": "/images/sample_product_res.jpg"
+    "image": "/images/sample_product_res.jpg",
+    "back": "/images/sample_back.png"
   },
   {
     "title": "Panda Eyes Hoodie 8",
     "id": "Panda_eyes_hoodie_8",
     "description": "Comfortable Hoodie, comes in sm, md, lg, xl.",
     "price": "$15.00",
-    "image": "/images/sample_product_res.jpg"
+    "image": "/images/sample_product_res.jpg",
+    "back": "/images/sample_back.png"
   },
   {
     "title": "Panda Eyes Hoodie 9",
     "id": "Panda_eyes_hoodie_9",
     "description": "Comfortable Hoodie, comes in sm, md, lg, xl.",
     "price": "$15.00",
-    "image": "/images/sample_product_res.jpg"
+    "image": "/images/sample_product_res.jpg",
+    "back": "/images/sample_back.png"
   }
 ]

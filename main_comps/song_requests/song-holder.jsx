@@ -6,6 +6,9 @@ import {CgArrowLeftR,CgArrowRightR} from "react-icons/cg"
 import UseStateHolder from './useStateHolder.jsx'
 import {FaArrowAltCircleLeft, FaArrowAltCircleRight, FaDotCircle} from 'react-icons/fa'
 import {BsDot} from 'react-icons/bs'
+
+import {AiOutlineArrowLeft, AiOutlineArrowRight} from 'react-icons/ai'
+
 //special mod function
 //https://stackoverflow.com/questions/4467539/javascript-modulo-gives-a-negative-result-for-negative-numbers
 
@@ -62,26 +65,33 @@ export default function SongBox(){
     {'genre': '666666666',
     'songs': ['Free Falling', 'Sweet Caroline', 'Always']},
   ]
+
+  const videos = [
+    'https://www.youtube.com/embed/Y3MqM7nIwbs',
+    'https://www.youtube.com/embed/TAPdIAL3OjI',
+    'https://www.youtube.com/embed/yrLT0NGUCT4',
+    'https://www.youtube.com/embed/sXnK2MyK0aQ'
+  ]
   
   const [FlowDirection, setFlowDirection] = useState(true)
   const [CenterId, setCenterId] = useState(0)
-  const [LeftId, setLeftId] = useState(fakeFile.length - 1)
+  const [LeftId, setLeftId] = useState(videos.length - 1)
   const [RightId, setRightId] = useState(1)
 
   //https://github.com/NishantEC/ncompx/blob/main/src/components/Carousal/Carousel.jsx
     const nextBtn = () => {
-      if (LeftId === fakeFile.length - 1) {
+      if (LeftId === videos.length - 1) {
         setLeftId(0)
       } else {
         setLeftId(LeftId + 1)
       }
-      if (CenterId === fakeFile.length - 1) {
+      if (CenterId === videos.length - 1) {
         setCenterId(0)
       } else {
         setCenterId(CenterId + 1)
       }
   
-      if (RightId === fakeFile.length - 1) {
+      if (RightId === videos.length - 1) {
         setRightId(0)
       } else {
         setRightId(RightId + 1)
@@ -91,17 +101,17 @@ export default function SongBox(){
   const prevBtn = () => {
     setFlowDirection(false)
     if (LeftId === 0) {
-      setLeftId(fakeFile.length - 1)
+      setLeftId(videos.length - 1)
     } else {
       setLeftId(LeftId - 1)
     }
     if (CenterId === 0) {
-      setCenterId(fakeFile.length - 1)
+      setCenterId(videos.length - 1)
     } else {
       setCenterId(CenterId - 1)
     }
     if (RightId === 0) {
-      setRightId(fakeFile.length - 1)
+      setRightId(videos.length - 1)
     } else {
       setRightId(RightId - 1)
     }
@@ -180,7 +190,7 @@ export default function SongBox(){
             exit={'leftHidden'}
             className="card card-compact w-fit bg-base-100 shadow-xl my-auto absolute"
           >
-            <FakeCard genre={fakeFile[mod((CenterId - 1), fakeFile.length)].genre} songs={fakeFile[mod((CenterId - 1), fakeFile.length)].songs}/>
+            <VideoCardBody src={videos[LeftId]} />
             </motion.div>
           <motion.div
             drag="x"
@@ -201,7 +211,7 @@ export default function SongBox(){
             initial={FlowDirection ? 'right' : 'left'}
             animate="center"
             className="card card-compact w-fit bg-base-100 shadow-xl my-auto absolute"
-          ><VideoCardBody src="https://www.youtube.com/embed/Y3MqM7nIwbs"/></motion.div>
+          ><VideoCardBody src={videos[CenterId]}/></motion.div>
           <motion.div
             key={RightId}
             variants={variants}
@@ -210,18 +220,17 @@ export default function SongBox(){
             exit={'rightHidden'}
             className="card card-compact w-fit bg-base-100 shadow-xl my-auto absolute"
           >
-            <FakeCard genre={fakeFile[mod((CenterId + 1), fakeFile.length)].genre} songs={fakeFile[mod((CenterId + 1), fakeFile.length)].songs}/>
+            <VideoCardBody src={videos[RightId]} />
           </motion.div>
         </AnimatePresence>
       </motion.div>
     </motion.div>
       <motion.div className="flex mx-auto justify-center">
-        {fakeFile.map((file)=>{
-          return(<BsDot />)
-        })}
+        
 
-        <motion.button className="btn btn-ghost p-0" onClick={nextBtn}><FaArrowAltCircleLeft className="text-5xl"/></motion.button>
-        <motion.button className="btn btn-ghost p-0" onClick={prevBtn}><FaArrowAltCircleRight className="text-5xl"/></motion.button>
+        <motion.button className="p-0 group" onClick={prevBtn}><AiOutlineArrowLeft className="text-5xl transition-all group-hover:scale-x-150 group-hover:scale-y-75 group-hover:-translate-x-5"/></motion.button>
+        <motion.div className="w-20"></motion.div>
+        <motion.button className="p-0 group" onClick={nextBtn}><AiOutlineArrowRight className="text-5xl transition-all group-hover:scale-x-150 group-hover:scale-y-75 group-hover:translate-x-5"/></motion.button>
       </motion.div>
     </div>
     </div>

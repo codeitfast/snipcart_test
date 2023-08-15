@@ -228,9 +228,9 @@ export default function SongBox(){
       <motion.div className="flex mx-auto justify-center">
         
 
-        <motion.button className="p-0 group" onClick={prevBtn}><AiOutlineArrowLeft className="text-5xl transition-all group-hover:scale-x-150 group-hover:scale-y-75 group-hover:-translate-x-5"/></motion.button>
+        <motion.button className="p-0 group" onClick={prevBtn}><AiOutlineArrowLeft className="text-5xl transition-all group-hover:scale-x-110 group-hover:scale-y-90 group-hover:-translate-x-3"/></motion.button>
         <motion.div className="w-20"></motion.div>
-        <motion.button className="p-0 group" onClick={nextBtn}><AiOutlineArrowRight className="text-5xl transition-all group-hover:scale-x-150 group-hover:scale-y-75 group-hover:translate-x-5"/></motion.button>
+        <motion.button className="p-0 group" onClick={nextBtn}><AiOutlineArrowRight className="text-5xl transition-all group-hover:scale-x-110 group-hover:scale-y-90 group-hover:translate-x-3"/></motion.button>
       </motion.div>
     </div>
     </div>

@@ -14,7 +14,7 @@ export default function Header(props){
     </div>*/
 
   return(
-    <div className="navbar bg-base-100/50 backdrop-blur-sm  top-0 z-10 fixed">
+    <div className="navbar bg-base-100/50 backdrop-blur-sm top-0 z-10 fixed">
       <div className="flex-1">
         <a href="#about" className="btn btn-ghost normal-case text-xl"><img src={pandaLogo3.src} className="h-full"/></a>
       </div>

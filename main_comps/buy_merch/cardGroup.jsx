@@ -3,7 +3,7 @@ import panda from '../../public/images/panda_3d.png'
 
 export default function CardGroup(props){
   return (
-<div className="bg-slate-900 pb-16" id="shop">
+<div className="bg-gray-900 pb-16" id="shop">
   <div className="text-center place-content-center pt-16 pb-8">
     <h1 className="text-4xl text-white">Merch</h1>
     <div className="text-white flex mx-auto w-fit">5% of profits go to the

@@ -41,7 +41,7 @@ span{
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    border-color: #FF6600;
+    border-color: #fffb33;
 }
 .cool-hover .btnBefore, .cool-hover .btnBig, .cool-hover .btnMed, .cool-hover .btnSongs, .cool-hover .btnShop {
     right: 0;
@@ -112,6 +112,6 @@ body{
   -webkit-transition: fill 200ms linear;
 }
 .svg-special:hover{
-  fill: #FF6600;
+  fill: #fffb33;
   -webkit-transition: fill 200ms linear;
 }

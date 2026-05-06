@@ -20,7 +20,7 @@ export default function Card(props){
         <p>{props.description}</p>
         <p>{props.price}</p>
         <div className="card-actions justify-end">
-          <button class="snipcart-add-item btn btn-primary"
+          <button className="snipcart-add-item btn btn-primary"
   data-item-id={props.id}
   data-item-price={blankPrice}
   data-item-description={props.description}

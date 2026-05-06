@@ -33,7 +33,7 @@ function CardBody(args){
 
 function VideoCardBody(args){
   return(
-    <iframe src={args.src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen;" className="overflow-hidden rounded-2xl" width="500" height="280" allowfullscreen></iframe>
+    <iframe src={args.src} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen;" className="overflow-hidden rounded-2xl" width="500" height="280" allowFullScreen></iframe>
   )
 }
 
